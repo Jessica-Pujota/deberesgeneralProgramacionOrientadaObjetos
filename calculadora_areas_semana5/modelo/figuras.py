@@ -1,33 +1,34 @@
 """
-Modelo: FigurasGeométricas
-Descripción: Contiene las clases para calcular el área
-de distintas figuras geométricas.
+Modelo: Figuras Geométricas
+Descripción:
+Define las clases de las figuras geométricas y
+sus métodos para el cálculo de áreas.
 """
 
 import math
 
 
 class Rectangulo:
-    def __init__(self, base, altura):
-        self.base = base        # float
-        self.altura = altura    # float
+    def __init__(self, base: float, altura: float):
+        self.base = base
+        self.altura = altura
 
-    def calcular_area(self):
+    def calcular_area(self) -> float:
         return self.base * self.altura
 
 
 class Circulo:
-    def __init__(self, radio):
-        self.radio = radio      # float
+    def __init__(self, radio: float):
+        self.radio = radio
 
-    def calcular_area(self):
+    def calcular_area(self) -> float:
         return math.pi * self.radio ** 2
 
 
 class Triangulo:
-    def __init__(self, base, altura):
-        self.base = base        # float
-        self.altura = altura    # float
+    def __init__(self, base: float, altura: float):
+        self.base = base
+        self.altura = altura
 
-    def calcular_area(self):
+    def calcular_area(self) -> float:
         return (self.base * self.altura) / 2
