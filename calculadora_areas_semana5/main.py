@@ -1,14 +1,15 @@
 """
-Programa: Calculadora de áreas de figuras geométricas
-Descripción: Aplicativo desarrollado con Programación
-Orientada a Objetos y patrón de diseño MVC.
+Programa Principal
+Descripción:
+Punto de entrada del sistema.
+Ejecuta el servicio de cálculo de áreas.
 """
 
-from controlador.controlador_figuras import ControladorFiguras
+from servicios.calculadora_servicio import CalculadoraServicio
 
 
 def main():
-    app = ControladorFiguras()
+    app = CalculadoraServicio()
     app.ejecutar()
 
 
